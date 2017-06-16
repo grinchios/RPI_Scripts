@@ -9,7 +9,7 @@ some_value = 5000
 
 def message(publisher, value):
     client = mqtt.Client()
-    client.connect("mqtt.unixweb.de",1883,60)
+    client.connect(HOST,1883,60)
     client.publish(publisher, value)
     client.disconnect()
 
